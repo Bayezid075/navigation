@@ -9,6 +9,17 @@ const nav5 = document.getElementById("nav-5");
 function toggleMenuBar() {
   // toogle menubar open or closed
   menuBars.classList.toggle("change"); // change class will be taking from css file
+  // toggle menu active
+  overlay.classList.toggle("overlay-active");
+  if (overlay.classList.contains("overlay-active")) {
+    //Animate in
+    overlay.classList.remove("slide-close");
+    overlay.classList.add("slide-open");
+  } else {
+    // Animate out
+    overlay.classList.remove("slide-open");
+    overlay.classList.add("slide-close");
+  }
 }
 
 menuBars.addEventListener("click", toggleMenuBar);

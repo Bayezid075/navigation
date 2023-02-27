@@ -89,6 +89,15 @@ nav li:nth-of-type(5) {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  transform: translateX(-100vw);
+}
+.slide-open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+.slide-close {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100vw);
 }
 
 /* --- Menu Bars ------------------------------------ */
